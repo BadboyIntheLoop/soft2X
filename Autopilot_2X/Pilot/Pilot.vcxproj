@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{26302130-DD94-4610-8656-1AC6C6FA2426}</ProjectGuid>
+    <RootNamespace>Pilot</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
+    <EnableManagedIncrementalBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</EnableManagedIncrementalBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\Release</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)Pilot\Subsystems\PlatformDependent\Nios;$(ProjectDir)Pilot\Subsystems\PlatformDependent\Arm;$(ProjectDir)ucosII;$(ProjectDir)ucosIIW32;$(ProjectDir)PilotW32;$(ProjectDir)Pilot;$(ProjectDir)Pilot\Subsystems;$(ProjectDir)Pilot\Subsystems\PlatformDependent\Win;$(ProjectDir)Pilot\Subsystems\PlatformDependent;$(ProjectDir)Pilot\SubsData;$(ProjectDir)Pilot\Utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;__WIN32__;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <FloatingPointExceptions>true</FloatingPointExceptions>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <AdditionalOptions> /J</AdditionalOptions>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <BrowseInformation>false</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4100;4127;4206;4510;4610;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>false</StringPooling>
+      <CompileAsManaged>false</CompileAsManaged>
+      <CreateHotpatchableImage>false</CreateHotpatchableImage>
+      <OpenMPSupport>false</OpenMPSupport>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(ProjectDir)ucosII;$(ProjectDir)ucosIIW32;$(ProjectDir)PilotW32;$(ProjectDir)Pilot;$(ProjectDir)Pilot\Subsystems;$(ProjectDir)Pilot\Subsystems\PlatformDependent;$(ProjectDir)Pilot\Subsystems\PlatformDependent\Zynq;$(ProjectDir)Pilot\Subsystems\PlatformDependent\Nios;$(ProjectDir)Pilot\Subsystems\PlatformDependent\Win;$(ProjectDir)Pilot\SubsData;$(ProjectDir)Pilot\Utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;__WIN32__;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions> /J</AdditionalOptions>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4100;4127;4206;4510;4610;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Pilot\main.cpp" />
+    <ClCompile Include="Pilot\SubsData\Ahrs.cpp" />
+    <ClCompile Include="Pilot\SubsData\ChannelData.cpp" />
+    <ClCompile Include="Pilot\SubsData\DGpsData.cpp" />
+    <ClCompile Include="Pilot\Subsystems\CommChannel.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\FastRS.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\FlashProgrammer.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\Rs485HMR.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\StorageNIOSFlash.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\StorageNIOSRam.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\StorageSD.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\UartCAM.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\UartNIOS.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\Rs485ADNios.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\Rs485ADNiosHandlerWrapper.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\OSNativeW32.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\OSUcosII.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Win\ConsoleADWin.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Win\ConsoleW32.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Win\NiosDummyDecl.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Win\StorageW32.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Win\UartW32.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Win\UdpW32.cpp" />
+    <ClCompile Include="Pilot\SubsData\Camera.cpp" />
+    <ClCompile Include="Pilot\Subsystems\CameraManager.cpp" />
+    <ClCompile Include="Pilot\SubsData\ClassifiedLine.cpp" />
+    <ClCompile Include="Pilot\Utils\Base64.cpp" />
+    <ClCompile Include="Pilot\Utils\BufferBase.cpp" />
+    <ClCompile Include="Pilot\Utils\Crc.cpp" />
+    <ClCompile Include="Pilot\Subsystems\FlightController.cpp" />
+    <ClCompile Include="Pilot\Subsystems\FlightPlan.cpp" />
+    <ClCompile Include="Pilot\Subsystems\FlightPlanRealizer.cpp" />
+    <ClCompile Include="Pilot\SubsData\FlightTimeEstimator.cpp" />
+    <ClCompile Include="Pilot\Utils\File.cpp" />
+    <ClCompile Include="Pilot\Utils\FParser.cpp" />
+    <ClCompile Include="Pilot\Subsystems\FPlanConf.cpp" />
+    <ClCompile Include="Pilot\Subsystems\FPlanContainer.cpp" />
+    <ClCompile Include="Pilot\SubsData\FPlanData.cpp" />
+    <ClCompile Include="Pilot\SubsData\FPRealCondition.cpp" />
+    <ClCompile Include="Pilot\SubsData\FPRealData.cpp" />
+    <ClCompile Include="Pilot\SubsData\FPRealTrigger.cpp" />
+    <ClCompile Include="Pilot\SubsData\Gauge.cpp" />
+    <ClCompile Include="Pilot\GlobVars.cpp" />
+    <ClCompile Include="Pilot\SubsData\GpsData.cpp" />
+    <ClCompile Include="Pilot\SubsData\GpsPosition.cpp" />
+    <ClCompile Include="Pilot\SubsData\Iir.cpp" />
+    <ClCompile Include="Pilot\IRQ.cpp" />
+    <ClCompile Include="Pilot\Subsystems\LineDispatcher.cpp" />
+    <ClCompile Include="Pilot\Subsystems\LogManager.cpp" />
+    <ClCompile Include="Pilot\Subsystems\ODTObserver.cpp" />
+    <ClCompile Include="Pilot\Subsystems\ODTSubject.cpp" />
+    <ClCompile Include="Pilot\Utils\Hmr2300.cpp" />
+    <ClCompile Include="Pilot\Utils\L1_Control.cpp" />
+    <ClCompile Include="Pilot\Utils\Matrix3.cpp" />
+    <ClCompile Include="Pilot\Utils\ParameterNames.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PhysicalState.cpp" />
+    <ClCompile Include="Pilot\Utils\Pid.cpp" />
+    <ClCompile Include="Pilot\Utils\PidModifierAlr.cpp" />
+    <ClCompile Include="Pilot\Utils\PidModifierPhi.cpp" />
+    <ClCompile Include="Pilot\Utils\PidModifierTheta.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\PlatformLayer.cpp" />
+    <ClCompile Include="Pilot\SubsData\PStateData.cpp" />
+    <ClCompile Include="Pilot\Utils\PidModifierThrottle.cpp" />
+    <ClCompile Include="Pilot\Utils\quaternion.cpp" />
+    <ClCompile Include="Pilot\Utils\Semaphore.cpp" />
+    <ClCompile Include="Pilot\Subsystems\SerialDeviceBase.cpp" />
+    <ClCompile Include="Pilot\Subsystems\ServoManager.cpp" />
+    <ClCompile Include="Pilot\Subsystems\StorageBase.cpp" />
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\StorageFactory.cpp" />
+    <ClCompile Include="Pilot\SubsData\SysMonData.cpp" />
+    <ClCompile Include="Pilot\Subsystems\SystemLog.cpp" />
+    <ClCompile Include="Pilot\Subsystems\SystemMonitor.cpp" />
+    <ClCompile Include="Pilot\Utils\TECS.cpp" />
+    <ClCompile Include="Pilot\Utils\TypeParser.cpp" />
+    <ClCompile Include="Pilot\Utils\Ublox.cpp" />
+    <ClCompile Include="Pilot\SubsData\WindResolver.cpp" />
+    <ClCompile Include="Pilot\Utils\Vector3.cpp" />
+    <ClCompile Include="ucosII\os_core.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">6385;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="ucosIIW32\os_cpu_c.c" />
+    <ClCompile Include="ucosII\os_dbg_r.c" />
+    <ClCompile Include="ucosII\os_flag.c" />
+    <ClCompile Include="ucosII\os_mbox.c" />
+    <ClCompile Include="ucosII\os_mem.c" />
+    <ClCompile Include="ucosII\os_mutex.c" />
+    <ClCompile Include="ucosII\os_q.c" />
+    <ClCompile Include="ucosII\os_sem.c" />
+    <ClCompile Include="ucosII\os_task.c" />
+    <ClCompile Include="ucosII\os_time.c" />
+    <ClCompile Include="ucosII\os_tmr.c" />
+    <ClCompile Include="ucosIIW32\pc.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PilotW32\xil_types.h" />
+    <ClInclude Include="Pilot\SubsData\Ahrs.h" />
+    <ClInclude Include="Pilot\SubsData\ChannelData.h" />
+    <ClInclude Include="Pilot\SubsData\CmdQueue.h" />
+    <ClInclude Include="Pilot\SubsData\DGpsData.h" />
+    <ClInclude Include="Pilot\Subsystems\CommChannel.h" />
+    <ClInclude Include="Pilot\Subsystems\IAsyncDevice.h" />
+    <ClInclude Include="Pilot\Subsystems\OSBase.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\FastRS.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\FlashProgrammer.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\Rs485HMR.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\StorageNIOSFlash.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\StorageNIOSRam.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\StorageSD.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\UartCAM.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\UartNIOS.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\Rs485ADNios.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\Rs485ADNiosHandlerWrapper.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\OSNativeW32.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\OSUcosII.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Win\ConsoleADWin.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Win\ConsoleW32.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Win\StorageW32.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Win\UartW32.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Win\UdpW32.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Win\NiosDummyDecl.h" />
+    <ClInclude Include="Pilot\Utils\AverageFilter.h" />
+    <ClInclude Include="Pilot\Utils\Base64.h" />
+    <ClInclude Include="Pilot\SubsData\Camera.h" />
+    <ClInclude Include="Pilot\Subsystems\CameraManager.h" />
+    <ClInclude Include="Pilot\SubsData\ClassifiedLine.h" />
+    <ClInclude Include="Pilot\Utils\BufferBase.h" />
+    <ClInclude Include="Pilot\Utils\DynQueue.h" />
+    <ClInclude Include="Pilot\Utils\File.h" />
+    <ClInclude Include="Pilot\Utils\Filter.h" />
+    <ClInclude Include="Pilot\Utils\FilterClass.h" />
+    <ClInclude Include="Pilot\Utils\FilterWithBuffer.h" />
+    <ClInclude Include="Pilot\Utils\FixBuffer.h" />
+    <ClInclude Include="Pilot\Utils\Hmr2300.h" />
+    <ClInclude Include="Pilot\Utils\L1_Control.h" />
+    <ClInclude Include="Pilot\Utils\Matrix3.h" />
+    <ClInclude Include="Pilot\Utils\Navigation.h" />
+    <ClInclude Include="Pilot\Utils\PidModifierThrottle.h" />
+    <ClInclude Include="Pilot\Utils\quaternion.h" />
+    <ClInclude Include="Pilot\Utils\rotation.h" />
+    <ClInclude Include="Pilot\Utils\SpdHgtControl.h" />
+    <ClInclude Include="Pilot\Utils\StatQueue.h" />
+    <ClInclude Include="Pilot\Utils\Crc.h" />
+    <ClInclude Include="Pilot\Defs.h" />
+    <ClInclude Include="Pilot\Subsystems\FlightController.h" />
+    <ClInclude Include="Pilot\Subsystems\FlightPlan.h" />
+    <ClInclude Include="Pilot\Subsystems\FlightPlanRealizer.h" />
+    <ClInclude Include="Pilot\SubsData\FlightTimeEstimator.h" />
+    <ClInclude Include="Pilot\Utils\FParser.h" />
+    <ClInclude Include="Pilot\Subsystems\FPlanConf.h" />
+    <ClInclude Include="Pilot\Subsystems\FPlanContainer.h" />
+    <ClInclude Include="Pilot\SubsData\FPlanData.h" />
+    <ClInclude Include="Pilot\SubsData\FPRealCondition.h" />
+    <ClInclude Include="Pilot\SubsData\FPRealData.h" />
+    <ClInclude Include="Pilot\SubsData\FPRealTrigger.h" />
+    <ClInclude Include="Pilot\SubsData\Gauge.h" />
+    <ClInclude Include="Pilot\GlobVars.h" />
+    <ClInclude Include="Pilot\SubsData\GpsData.h" />
+    <ClInclude Include="Pilot\SubsData\GpsPosition.h" />
+    <ClInclude Include="Pilot\SubsData\Iir.h" />
+    <ClInclude Include="Pilot\Utils\TECS.h" />
+    <ClInclude Include="Pilot\Utils\Vector2.h" />
+    <ClInclude Include="Pilot\Utils\Vector3.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ucosIIW32\includes.h" />
+    <ClInclude Include="Pilot\IRQ.h" />
+    <ClInclude Include="Pilot\Subsystems\LineDispatcher.h" />
+    <ClInclude Include="Pilot\Subsystems\LogManager.h" />
+    <ClInclude Include="Pilot\Utils\Numbers.h" />
+    <ClInclude Include="Pilot\Subsystems\ODTObserver.h" />
+    <ClInclude Include="Pilot\Subsystems\ODTSubject.h" />
+    <ClInclude Include="Pilot\Utils\ParameterNames.h" />
+    <ClInclude Include="Pilot\Subsystems\PhysicalState.h" />
+    <ClInclude Include="Pilot\Utils\Pid.h" />
+    <ClInclude Include="Pilot\Utils\PidModifierAlr.h" />
+    <ClInclude Include="Pilot\Utils\PidModifierBase.h" />
+    <ClInclude Include="Pilot\Utils\PidModifierPhi.h" />
+    <ClInclude Include="Pilot\Utils\PidModifierTheta.h" />
+    <ClInclude Include="PilotW32\pilot_cfg.h" />
+    <ClInclude Include="Pilot\PilotIncludes.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\PlatformLayer.h" />
+    <ClInclude Include="Pilot\SubsData\PStateData.h" />
+    <ClInclude Include="Pilot\SubsData\PStateHealth.h" />
+    <ClInclude Include="Pilot\Utils\Semaphore.h" />
+    <ClInclude Include="Pilot\Subsystems\SerialDeviceBase.h" />
+    <ClInclude Include="Pilot\SubsData\ServManData.h" />
+    <ClInclude Include="Pilot\SubsData\ServoConf.h" />
+    <ClInclude Include="Pilot\Subsystems\ServoManager.h" />
+    <ClInclude Include="Pilot\Subsystems\StorageBase.h" />
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\StorageFactory.h" />
+    <ClInclude Include="Pilot\Subsystems\SubsystemBase.h" />
+    <ClInclude Include="Pilot\SubsData\SysMonData.h" />
+    <ClInclude Include="Pilot\Subsystems\SystemLog.h" />
+    <ClInclude Include="Pilot\Subsystems\SystemMonitor.h" />
+    <ClInclude Include="Pilot\Utils\TypeParser.h" />
+    <ClInclude Include="Pilot\Utils\Ublox.h" />
+    <ClInclude Include="Pilot\SubsData\WindData.h" />
+    <ClInclude Include="Pilot\SubsData\WindResolver.h" />
+    <ClInclude Include="PilotW32\app_cfg.h" />
+    <ClInclude Include="PilotW32\os_cfg.h" />
+    <ClInclude Include="ucosIIW32\os_cpu.h" />
+    <ClInclude Include="ucosIIW32\pc.h" />
+    <ClInclude Include="ucosII\ucos_ii.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Pilot.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

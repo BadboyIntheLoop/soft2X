@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Pilot\Utils\BufferBase.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\Crc.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\FParser.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\ParameterNames.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\Pid.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\PidModifierAlr.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\PidModifierPhi.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\PidModifierTheta.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\PidModifierThrottle.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\Semaphore.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\TypeParser.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\Ublox.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\SubsData\Ahrs.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\SubsData\Camera.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\SubsData\ChannelData.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\SubsData\ClassifiedLine.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\SubsData\FlightTimeEstimator.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\SubsData\FPlanData.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\SubsData\FPRealCondition.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\SubsData\FPRealData.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\SubsData\FPRealTrigger.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\SubsData\Gauge.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\SubsData\GpsData.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\SubsData\GpsPosition.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\SubsData\Iir.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\SubsData\PStateData.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\SubsData\SysMonData.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\SubsData\WindResolver.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\CameraManager.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\CommChannel.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\FlightController.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\FlightPlan.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\FlightPlanRealizer.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\FPlanConf.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\FPlanContainer.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\LineDispatcher.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\LogManager.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\ODTObserver.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\ODTSubject.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PhysicalState.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\SerialDeviceBase.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\ServoManager.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\StorageBase.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\SystemLog.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\SystemMonitor.cpp">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\OSNativeW32.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\OSUcosII.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\PlatformLayer.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\StorageFactory.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\FastRS.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\FlashProgrammer.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\Rs485ADNios.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\Rs485ADNiosHandlerWrapper.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\StorageNIOSFlash.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\StorageNIOSRam.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\UartNIOS.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Win\ConsoleADWin.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Win\ConsoleW32.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Win\NiosDummyDecl.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Win\StorageW32.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Win\UartW32.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Win\UdpW32.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="ucosII\os_core.c">
+      <Filter>ucosII</Filter>
+    </ClCompile>
+    <ClCompile Include="ucosII\os_dbg_r.c">
+      <Filter>ucosII</Filter>
+    </ClCompile>
+    <ClCompile Include="ucosII\os_flag.c">
+      <Filter>ucosII</Filter>
+    </ClCompile>
+    <ClCompile Include="ucosII\os_mbox.c">
+      <Filter>ucosII</Filter>
+    </ClCompile>
+    <ClCompile Include="ucosII\os_mem.c">
+      <Filter>ucosII</Filter>
+    </ClCompile>
+    <ClCompile Include="ucosII\os_mutex.c">
+      <Filter>ucosII</Filter>
+    </ClCompile>
+    <ClCompile Include="ucosII\os_q.c">
+      <Filter>ucosII</Filter>
+    </ClCompile>
+    <ClCompile Include="ucosII\os_sem.c">
+      <Filter>ucosII</Filter>
+    </ClCompile>
+    <ClCompile Include="ucosII\os_task.c">
+      <Filter>ucosII</Filter>
+    </ClCompile>
+    <ClCompile Include="ucosII\os_time.c">
+      <Filter>ucosII</Filter>
+    </ClCompile>
+    <ClCompile Include="ucosII\os_tmr.c">
+      <Filter>ucosII</Filter>
+    </ClCompile>
+    <ClCompile Include="ucosIIW32\os_cpu_c.c">
+      <Filter>ucosIIW32</Filter>
+    </ClCompile>
+    <ClCompile Include="ucosIIW32\pc.c">
+      <Filter>ucosIIW32</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\GlobVars.cpp">
+      <Filter>Pilot</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\IRQ.cpp">
+      <Filter>Pilot</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\main.cpp" />
+    <ClCompile Include="Pilot\SubsData\DGpsData.cpp">
+      <Filter>Pilot\SubsData</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\Rs485HMR.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\StorageSD.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Subsystems\PlatformDependent\Nios\UartCAM.cpp">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\File.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\Hmr2300.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\Base64.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\Matrix3.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\quaternion.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\Vector3.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\L1_Control.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Pilot\Utils\TECS.cpp">
+      <Filter>Pilot\Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Pilot\Utils\Base64.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\BufferBase.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\Crc.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\DynQueue.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\FixBuffer.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\FParser.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\Numbers.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\ParameterNames.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\Pid.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\PidModifierAlr.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\PidModifierBase.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\PidModifierPhi.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\PidModifierTheta.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\PidModifierThrottle.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\Semaphore.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\StatQueue.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\TypeParser.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\Ublox.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\Vector2.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\Ahrs.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\Camera.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\ChannelData.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\ClassifiedLine.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\CmdQueue.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\FlightTimeEstimator.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\FPlanData.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\FPRealCondition.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\FPRealData.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\FPRealTrigger.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\Gauge.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\GpsData.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\GpsPosition.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\Iir.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\PStateData.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\PStateHealth.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\ServManData.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\ServoConf.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\SysMonData.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\WindData.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\WindResolver.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\CameraManager.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\CommChannel.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\FlightController.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\FlightPlan.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\FlightPlanRealizer.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\FPlanConf.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\FPlanContainer.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\IAsyncDevice.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\LineDispatcher.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\LogManager.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\ODTObserver.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\ODTSubject.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\OSBase.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PhysicalState.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\SerialDeviceBase.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\ServoManager.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\StorageBase.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\SubsystemBase.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\SystemLog.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\SystemMonitor.h">
+      <Filter>Pilot\Subsystems</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\OSNativeW32.h">
+      <Filter>Pilot\Subsystems\PlatformDependent</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\OSUcosII.h">
+      <Filter>Pilot\Subsystems\PlatformDependent</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\PlatformLayer.h">
+      <Filter>Pilot\Subsystems\PlatformDependent</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\StorageFactory.h">
+      <Filter>Pilot\Subsystems\PlatformDependent</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\FastRS.h">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\FlashProgrammer.h">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\Rs485ADNios.h">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\Rs485ADNiosHandlerWrapper.h">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\StorageNIOSFlash.h">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\StorageNIOSRam.h">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\UartNIOS.h">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Win\ConsoleADWin.h">
+      <Filter>Pilot\Subsystems\PlatformDependent\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Win\ConsoleW32.h">
+      <Filter>Pilot\Subsystems\PlatformDependent\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Win\NiosDummyDecl.h">
+      <Filter>Pilot\Subsystems\PlatformDependent\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Win\StorageW32.h">
+      <Filter>Pilot\Subsystems\PlatformDependent\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Win\UartW32.h">
+      <Filter>Pilot\Subsystems\PlatformDependent\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Win\UdpW32.h">
+      <Filter>Pilot\Subsystems\PlatformDependent\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="PilotW32\app_cfg.h">
+      <Filter>PilotW32</Filter>
+    </ClInclude>
+    <ClInclude Include="PilotW32\os_cfg.h">
+      <Filter>PilotW32</Filter>
+    </ClInclude>
+    <ClInclude Include="PilotW32\pilot_cfg.h">
+      <Filter>PilotW32</Filter>
+    </ClInclude>
+    <ClInclude Include="ucosII\ucos_ii.h">
+      <Filter>ucosII</Filter>
+    </ClInclude>
+    <ClInclude Include="ucosIIW32\os_cpu.h">
+      <Filter>ucosIIW32</Filter>
+    </ClInclude>
+    <ClInclude Include="ucosIIW32\pc.h">
+      <Filter>ucosIIW32</Filter>
+    </ClInclude>
+    <ClInclude Include="ucosIIW32\includes.h">
+      <Filter>ucosIIW32</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Defs.h">
+      <Filter>Pilot</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\GlobVars.h">
+      <Filter>Pilot</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\IRQ.h">
+      <Filter>Pilot</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\PilotIncludes.h">
+      <Filter>Pilot</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\SubsData\DGpsData.h">
+      <Filter>Pilot\SubsData</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="PilotW32\xil_types.h">
+      <Filter>PilotW32</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\Rs485HMR.h">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\StorageSD.h">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Subsystems\PlatformDependent\Nios\UartCAM.h">
+      <Filter>Pilot\Subsystems\PlatformDependent\Arm</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\File.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\Hmr2300.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\Matrix3.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\quaternion.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\rotation.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\Vector3.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\Filter.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\FilterClass.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\FilterWithBuffer.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\L1_Control.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\Navigation.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\SpdHgtControl.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\TECS.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Pilot\Utils\AverageFilter.h">
+      <Filter>Pilot\Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="PilotW32">
+      <UniqueIdentifier>{f8d207ab-75f6-44f2-9a86-73910f52196e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ucosII">
+      <UniqueIdentifier>{5fda3648-c7a0-482f-ade5-8b0b0287124b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ucosIIW32">
+      <UniqueIdentifier>{4bb82874-7045-4151-8377-0763120d1c7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pilot">
+      <UniqueIdentifier>{666295fb-9449-461d-9c8d-1ae19af96386}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pilot\SubsData">
+      <UniqueIdentifier>{83253197-2930-4a6c-b042-28945a4fa312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pilot\Subsystems">
+      <UniqueIdentifier>{606bcc99-f885-4fb3-a62b-513bc5b5c62a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pilot\Subsystems\PlatformDependent">
+      <UniqueIdentifier>{b6b052db-cc29-47ba-a99e-5879bf2d536e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pilot\Subsystems\PlatformDependent\Win">
+      <UniqueIdentifier>{94fdc022-83f6-4e7c-9be4-b70782ada75b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pilot\Utils">
+      <UniqueIdentifier>{01023db4-a4d7-4642-a526-b958c9872e9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pilot\Subsystems\PlatformDependent\Arm">
+      <UniqueIdentifier>{ad412efa-adaa-48af-8ff2-88265bf34e12}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Pilot.rc" />
+  </ItemGroup>
+</Project>

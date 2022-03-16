@@ -1,0 +1,7 @@
+*.bak
+*/Debug
+log
+*.suo
+/*.sdf
+Debug
+ipch
